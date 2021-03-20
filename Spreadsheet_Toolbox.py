@@ -108,11 +108,11 @@ def get_column(file, index):
 def save_results(data= None, title= None, parse=None):
     workbook = openpyxl.Workbook()
     worksheet = workbook.active
-    if parse == 'csv':
-        for line in data:
+    for line in data:
+        if parse == 'csv':
             worksheet.append(line.split(','))
-    else:
-        worksheet.append(data)
+        else:
+            worksheet.append(line)
     workbook.save(title)
 
 
