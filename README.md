@@ -29,6 +29,9 @@ Contains the following functions, function names are capitalized for readability
   * GET_COLUMN (FILE, INDEX ) - Returns a spreadsheet column in a list.
           > Supports CSV and XLSX.          
   
+  * SAVE_TO (DATA)
+         > Takes a 2dimensional list and saves to a seperate spreadsheet. 
+  
   * DATE_OBJECT (DATE) -  Returns a datetime object.
           > Currently excludes time entries.
           > Returns a datetime object based on a string date.
