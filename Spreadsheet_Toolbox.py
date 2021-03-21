@@ -104,8 +104,8 @@ def get_column(file, index):
 
 
 # Takes a 2 dimensional list and writes the lists into rows.
-# PASRSE can be set to CSV if the lists are made up of CSV rows.
-def save_results(data= None, title= None, parse=None):
+# PARSE can be set to CSV if the lists are made up of CSV rows.
+def save_to_sheet(data= None, title= None, parse=None):
     workbook = openpyxl.Workbook()
     worksheet = workbook.active
     for line in data:
