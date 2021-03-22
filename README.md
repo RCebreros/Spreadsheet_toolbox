@@ -29,11 +29,11 @@ Contains the following functions, function names are capitalized for readability
   * GET_COLUMN (FILE, INDEX ) - Returns a spreadsheet column in a list.
           > Supports CSV and XLSX.          
   
-  * SAVE_RESULTS (DATA, TITLE, PARSE) - Saves a 2 dimensional list to a spreadsheet.
+  * SAVE_TO_SHEET (DATA, TITLE, PARSE=None) - Saves a 2 dimensional list to a spreadsheet.
          > Every element in the list/tuple becomes a row. 
          > DATA - refers to the dimensional list.
          > TITLE - refers to the title it will be saved under.
-         > PARSE DEFAULT- Defauls to XLSX, where individual elements are saved in individual cells.
+         > PARSE DEFAULTS TO NONE- Defauls to XLSX, where individual elements are saved in individual cells, each list being a row of its own.
          > PARSE 'CSV' - 'CSV' can be chosen to split the list by the commas and save each split into individual cells.
   
   * DATE_OBJECT (DATE) -  Returns a datetime object.
